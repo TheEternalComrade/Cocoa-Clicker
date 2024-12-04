@@ -2,7 +2,7 @@
 const cocoImg = document.getElementById("coco-img")
 let cocoPerClick = 1;
 //let cocoPerSec = 1
-let totalCoco = 48
+let totalCoco = 1
 
 let cocoPerClickDisplay = document.getElementById("coco-per-click-num")
 let cocoPerSecDisplay = document.getElementById("coco-per-sec-num")
