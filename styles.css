@@ -6,6 +6,21 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.hide-main{
+    display: none;
+}
+
+.hide-end-screen h1{
+    display: none;
+}
+
+#end-screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #title{
     display: flex;
     justify-content: center;
@@ -22,9 +37,15 @@ or in a different div*/
 }
 
 #click-and-info >div{
-    background-color: red;
+    background-color: rgb(143, 21, 21);
+    border: 3px solid white;
     border-radius: 20px;
 }
+
+.click-and-info-spans{
+    font-size: 2rem;
+}
+
 
 #click-upgrade-amount, #automatic-upgrade-amount{
     font-size: 2rem;
@@ -49,11 +70,6 @@ or in a different div*/
     transform: scale(1.1);
 }
 
-#amount-til-next-coco{
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-}
 
 /*Bottom buttons*/
 #upgrades{
@@ -87,9 +103,13 @@ lighter color when the player cant afford them*/
     /*perhaps change the order of the info tags so img is last, 
     or in a different div*/
     #click-and-info{
-        display: inline;
-        justify-content: space-evenly;
+        display: flex;
+        justify-content: flex;
         font-size: 0.5rem
+    }
+
+    .click-and-info-spans{
+        font-size: 0.7rem;
     }
     
     #coco-img-container{
@@ -117,6 +137,7 @@ lighter color when the player cant afford them*/
         display: flex;
         justify-content: space-around;
         font-size: 0.5rem;
+        text-align: center;
     }
     #upgrades:hover{
         cursor: pointer
