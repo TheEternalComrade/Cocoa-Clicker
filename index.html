@@ -10,25 +10,26 @@
     <title>Chocolate Clicker</title>
 </head>
 <body>
+    <main class="">
     <header id="title">
         <h1>Cocoa Clicker</h1>
     </header>
 
 <!--First 3 info things-->
     <div id="click-and-info">
-        <div id="coco-per-click">
-            <h1>Cocoa Per Click:
-                <span id="coco-per-click-num">1</span>
-            </h1>
-        </div>
-        <!--<div id="coco-automatic">
-            <h1>Cocoa Per Second:
-                <span id="coco-per-sec-num">1</span>
-            </h1>
-        </div>-->
         <div id="total-cocoa">
             <h1>Total Cocoa:
-                <span id="total-cocoa-num">0</span>
+                <span id="total-cocoa-num" class="click-and-info-spans">0</span>
+            </h1>
+        </div>
+        <div id="coco-per-click">
+            <h1>Cocoa Per Click:
+                <span id="coco-per-click-num" class="click-and-info-spans">1</span>
+            </h1>
+        </div>
+        <div id="coco-automatic">
+            <h1>Cocoa Per Second:
+                <span id="coco-per-sec-num" class="click-and-info-spans">1</span>
             </h1>
         </div>
     </div>
@@ -41,18 +42,10 @@
         alt="Cocoa Pod">
 </div>
 
-
-<!--Amount til next image-
-    <div id="amount-til-next-coco">
-        <h1>
-            <span id="amount-til-next-num">100</span> 
-            Cocoa til next Cocoa
-        </h1>
-    </div>
--->
+<!--Amount til next image-->
 
 <!--Bottom buttons-->
-   <!-- <div id="upgrades">
+    <div id="upgrades">
         <div id="cursor-upgrade" class="upgrades too-broke">
             <h1>x
                 <span id="cursor-upgrade-by-amount">2</span> 
@@ -70,8 +63,13 @@
             <p id="automatic-upgrade-amount">
                 <span id="auto-upgrade-cost">50</span> Cocoa
             </p>
-        </div>--><!--This part was stressing me out, so i'll save it 
-        for another day-->
+        </div>
+    </div>
+</main>
+
+
+    <div id="end-screen" class="hide-end-screen">
+        <h1>Congratulations! You have aquired at least 1000 Cocoa!</h1>
     </div>
 
     <script src="script.js"></script>
