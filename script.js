@@ -36,7 +36,6 @@ cocoImg.addEventListener("click", addToTotal);
 function addToTotal(){
     totalCoco += cocoPerClick;
     totalCocoDisplay.innerHTML = totalCoco;
-    console.log(totalCoco)
     canUserIncreaseClick()
     canUserIncreaseSec()
 
