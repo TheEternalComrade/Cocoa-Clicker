@@ -19,8 +19,6 @@ let autoUpgradeCost = 50;
 let autoUpgradeCostDisplay = document.getElementById("auto-upgrade-cost")
 
 
-//test log
-console.log(totalCoco)
 
 //autoomatic coco interval
 setInterval(updateAutomatic, 1000);
